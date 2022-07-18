@@ -1,0 +1,112 @@
+/* @import url('./components/NavBar/NavBar.css'); */
+@import url("../../components/NavBar/NavBar.css");
+
+#hero {
+    display: block;
+}
+
+.hero-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.hero-content > h1 {
+    font-size: 74px;
+    line-height: 0.9;
+    margin-bottom: 2rem;
+}
+
+.hero-section.container {
+    justify-content: center;
+}
+
+.hero-content > p {
+    color: gray;
+    line-height: 1.1;
+}
+
+.hero-content > h1,
+.hero-content > p {
+    max-width: 323px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-para + .hero-para, .explore {
+    margin-top: 1rem;
+}
+
+.explore {
+    background-color: var(--global-red);
+    color: white;
+    width: 130px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    box-shadow: 0 10px 10px -10px black;
+}
+
+.fas.fa-long-arrow-alt-right {
+    margin-left: 5px;
+}
+
+@media (max-width: 767.9px){
+    #hero {
+        height: 250px;
+        width: 250px;
+    }
+
+    .hero-content > h1 {
+        font-size: 28px;
+        margin-top: 2rem;
+    }
+
+    .hero-content > p {
+        font-size: 14px;
+    }
+
+    .hero-content > h1,
+    .hero-content > p {
+        text-align: center;
+    }
+
+    .hero-section.container {
+        flex-direction: column-reverse;
+    }
+
+    .explore {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px){
+    #hero {
+        height: 360px;
+        width: 360px;
+    } 
+
+    .hero-content > h1 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.9px){
+    #hero {
+        height: 450px;
+        width: 450px;
+    }    
+}
+
+@media (min-width: 1200px){
+    #hero {
+        height: 600px;
+        width: 600px;
+    }
+
+    .hero-content {
+        margin-right: 3rem;
+    }
+}

@@ -1,0 +1,133 @@
+.image-container {
+    height: 130px;
+    box-shadow: 0 0 10px -5px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card {
+    width: 100%;
+    background-color: white;
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 15px 15px -15px black;
+}
+
+.wish > .fa-heart {
+    display: inline-block;
+}
+
+.product-detail > h3 {
+    /* font-size: 13px; */
+    font-weight: 500;
+    display: block;
+    width: 98%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.product-detail > h2 {
+    /* font-size: 16px; */
+    font-weight: 600;
+}
+
+.rate-count-wish {
+    /* font-size: 12px; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+}
+
+.rate-count {
+    color: gray;
+}
+
+.rating {
+    color: black;
+    font-weight: 500;
+}
+
+.fa-star {
+    color: rgb(240, 100, 100);
+    margin-left: 5px;
+}
+
+/* current font size upto 767px */
+
+@media (max-width: 767.9px) {
+    .product-detail > h3 {
+        font-size: 13px;
+    }  
+    
+    .rate-count-wish {
+        font-size: 12px;
+    }  
+    
+    .product-detail > h2 {
+        font-size: 16px;
+    }    
+}
+
+@media (min-width: 768px) {
+    .product-detail > h3 {
+        font-size: 16px;
+    }  
+    
+    .rate-count-wish {
+        font-size: 15px;
+    }  
+    
+    .product-detail > h2 {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+    .image-container {
+        height: 165px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.9px) {
+    .Link {
+        width: 30%;
+    }
+
+    .Link:nth-last-child(1) {
+        margin-right: auto;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 575.9px) {
+    .Link {
+        width: 48.5%;
+    }
+}
+
+@media (min-width: 992px) {
+    .Link {
+        width: 22%;
+    }
+
+    .image-container {
+        height: 190px;
+    }
+}
+
+@media (min-width: 1200px){
+    .Link {
+        width: 18%;
+    }
+}

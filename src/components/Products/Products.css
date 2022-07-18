@@ -1,0 +1,122 @@
+@import url('../NavBar/NavBar.css');
+
+.cat-btn {
+    background-color: transparent;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.products.container {
+    flex-direction: column;
+}
+
+.sort, .filter {
+    display: none;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+}
+
+.sort-options {
+    background-color: white;
+    padding: 0.5rem 0.8rem;
+}
+
+.sort-option, .sort-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+}
+
+.sort-option {
+    width: max-content;
+    color: rgb(92, 91, 91);
+}
+
+.option-content {
+    outline: 1.5px solid gray;
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+}
+
+.sort-icons i {
+    margin: 0;
+    color: rgb(92, 91, 91);
+}
+
+.sort-icons {
+    margin-right: 10px;
+}
+
+.sort-options > h2 {
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(88, 88, 88);
+    border-bottom: 1px solid rgb(210, 210, 210);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.sort-option + .sort-option {
+    margin-top: 0.7rem;
+}
+
+.btn-content {
+    padding: 0.3rem 0.6rem;
+    background-color: rgba(227, 227, 227, 0.571);
+    box-shadow: 0px 0px 10px -5px black;
+}
+
+.products > div {
+    width: 100%;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn-container, .sort-options > h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-container {
+    border-bottom: 1.5px solid rgb(185, 173, 173);
+}
+
+.active {
+    border-bottom: 2px solid rgb(240, 100, 100);
+}
+
+@media (max-width: 575.9px){
+    .cat-btn {
+        display: none;
+    }
+
+    #select, .sort, .filter {
+        display: block;
+    }
+
+    .btn-container {
+        padding-bottom: 0.7rem;
+    }
+}
+
+@media (min-width: 768px){
+    .cat-btn {
+        font-size: 17px;
+    }
+
+    .btn-container {
+        max-width: 682px;
+    }
+}
